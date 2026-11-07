@@ -1,6 +1,6 @@
 // Офлайн-кэш приложения. При каждом обновлении файлов увеличивайте номер версии,
 // тогда телефон скачает новую версию. Данные (localStorage) это не затрагивает.
-const CACHE = 'pitanie-v1';
+const CACHE = 'pitanie-v3';
 const FILES = [
   './', './index.html', './style.css', './data.js', './logic.js', './app.js',
   './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png',

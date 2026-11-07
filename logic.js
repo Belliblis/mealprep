@@ -14,11 +14,10 @@ function normName(s) {
 const PANTRY_RE = /(^|[^а-я])(круп|рис|гречк|булгур|чечевиц|макарон|спагетти|лапш|мук|масл|специ|карри|соевый соус|соль)/;
 function guessPantry(name) { return PANTRY_RE.test(normName(name)); }
 
-// Мои ограничения: лук, сельдерей, овощные соки
+// Мои ограничения: лук, сельдерей
 const BANNED = [
   { label: 'лук', test: n => /(^|[^а-я])лук/.test(n) },
   { label: 'сельдерей', test: n => /сельдер/.test(n) },
-  { label: 'овощной сок', test: n => /(^|[^а-я])сок/.test(n) && /(овощ|томат|морков|свекл|тыкв|огуреч|капуст)/.test(n) },
 ];
 function bannedIn(ingredients) {
   const found = [];
